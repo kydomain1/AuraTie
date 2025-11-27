@@ -1,5 +1,115 @@
 // Extended product data with detailed information
 const productDetails = {
+    'viagogo-live-pass': {
+        id: 'viagogo-live-pass',
+        title: 'Viagogo Live Freedom Pass',
+        category: 'travel',
+        price: '$159.00',
+        originalPrice: '$199.00',
+        rating: 4.8,
+        reviewCount: 118,
+        images: [
+            'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=600&fit=crop'
+        ],
+        description: 'Design a two-night sprint through concerts, sports, and theater with curated credits pulled directly from Viagogo’s verified marketplace. Concierge planners align hospitality, transfers, and seat maps so your crew glides through every checkpoint.',
+        features: [
+            'Three flex credits redeemable across concerts, sports, or theater',
+            'Verified mobile delivery with instant reissue support',
+            'Concierge text line for reroutes and upgrade advice',
+            'Seat clustering intelligence to keep groups together',
+            'Price pulse monitoring that nudges you before demand spikes',
+            'City playbooks with dining, transit, and after-party tips',
+            'Merch and hospitality add-ons available at checkout'
+        ],
+        specifications: {
+            'Activation Window': 'Start anytime within 12 months of purchase',
+            'Redemption Period': '45 days once first credit is used',
+            'Coverage': 'Major North American and European metros',
+            'Support': '24/7 fan help desk with chat and phone',
+            'Transfer Method': 'Instant mobile ticket wallet via Viagogo',
+            'Upgrade Paths': 'Club access, lounge hospitality, meet-and-greet lotteries'
+        },
+        reviews: [
+            {
+                name: 'Dana H.',
+                rating: 5,
+                date: '2025-09-22',
+                text: 'Stacked a stadium show, derby match, and rooftop comedy set in one weekend. Concierge rerouted us when rain shifted kickoff—zero stress.'
+            },
+            {
+                name: 'Luis G.',
+                rating: 5,
+                date: '2025-09-14',
+                text: 'Loved the city guide add-ons. Seat clustering kept eight of us together in the mezzanine with perfect sightlines.'
+            },
+            {
+                name: 'Harper W.',
+                rating: 4,
+                date: '2025-09-05',
+                text: 'Fantastic value, though I would love a 60-day redemption window. Customer care was fast when I swapped nights.'
+            }
+        ],
+        relatedProducts: ['stubhub-event-pass', 'smart-home-system'],
+        storeLink: 'https://www.linkhaitao.com/index.php?mod=lhdeal&track=78d9_aE0npI5K0_bOgTa9jCWIqDPJEdwlWEq2UFtGNKqIYt1jr_bKhG16V8UAVerDW9begM&new=https%3A%2F%2Fwww.viagogo.com%2F'
+    },
+    'stubhub-event-pass': {
+        id: 'stubhub-event-pass',
+        title: 'City Event Explorer by StubHub',
+        category: 'travel',
+        price: '$149.00',
+        originalPrice: '$189.00',
+        rating: 4.9,
+        reviewCount: 142,
+        images: [
+            'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&h=600&fit=crop',
+            'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=600&fit=crop'
+        ],
+        description: 'Bundle three must-see experiences into a single weekend itinerary with curated concert, sports, and theater tickets sourced from StubHub’s verified marketplace. Each pass includes real-time price-drop monitoring, mobile delivery, and concierge suggestions for VIP upgrades.',
+        features: [
+            'Includes three event credits across concerts, sports, or theater',
+            'Verified mobile tickets delivered instantly through the StubHub app',
+            'Concierge text line for rerouting plans or requesting seat upgrades',
+            'Seat map coaching to keep groups together',
+            'City guides with restaurant and transit pairings',
+            'Price-drop monitoring locked in for 30 days',
+            'Optional add-ons for merch or club access'
+        ],
+        specifications: {
+            'Coverage Areas': 'Top 25 U.S. metro areas plus select international hubs',
+            'Delivery Method': 'Instant mobile transfer via StubHub digital wallet',
+            'Flex Window': 'Redeem 3 events within 45 days of activation',
+            'Support': '24/7 fan help desk with live chat',
+            'Upgrade Paths': 'VIP lounges, club seating, and hospitality bundles',
+            'Perks': 'Automatic inclusion in StubHub price-drop alerts'
+        },
+        reviews: [
+            {
+                name: 'Jordan P.',
+                rating: 5,
+                date: '2025-09-28',
+                text: 'Used the pass in Chicago and lined up a concert, WNBA playoff game, and comedy show without breaking a sweat. Concierge rerouted us when rain delayed the opener.'
+            },
+            {
+                name: 'Priya S.',
+                rating: 5,
+                date: '2025-09-20',
+                text: 'Seat map coaching kept our group of six in the same section for a sold-out tour. Loved having restaurant recs bundled into the itinerary.'
+            },
+            {
+                name: 'Alex R.',
+                rating: 4,
+                date: '2025-09-12',
+                text: 'Excellent value, though I wish the flex window were 60 days. Support team was quick to help when we swapped a matinee for a night show.'
+            }
+        ],
+        relatedProducts: ['organic-skincare-set', 'smart-home-system'],
+        storeLink: 'https://www.linkhaitao.com/index.php?mod=lhdeal&track=6ea46J9BwHLTAMWeMiWRSwAhqLjkZ788ZyIERou9ZiUvc87zqPS6TwR3_b5iZE_aWkTDfO0Ddz&new=https%3A%2F%2Fwww.stubhub.com%2F'
+    },
     'organic-skincare-set': {
         id: 'organic-skincare-set',
         title: 'Premium Organic Skincare Set',
@@ -53,7 +163,8 @@ const productDetails = {
                 text: 'Great quality products. The cleanser is very gentle and the moisturizer is perfect for my dry skin. Only wish the serum bottle was larger!'
             }
         ],
-        relatedProducts: ['designer-handbag', 'smart-home-system']
+        relatedProducts: ['designer-handbag', 'smart-home-system'],
+        storeLink: '#'
     },
 
     'designer-handbag': {
@@ -110,7 +221,8 @@ const productDetails = {
                 text: 'Beautiful bag with excellent quality. Only minor complaint is that it\'s a bit heavier than expected, but the quality makes up for it.'
             }
         ],
-        relatedProducts: ['organic-skincare-set', 'smart-home-system']
+        relatedProducts: ['organic-skincare-set', 'smart-home-system'],
+        storeLink: '#'
     },
 
     'smart-home-system': {
@@ -167,7 +279,8 @@ const productDetails = {
                 text: 'Solid system with good features. Had a small issue with one sensor but customer support was very helpful and sent a replacement quickly.'
             }
         ],
-        relatedProducts: ['organic-skincare-set', 'designer-handbag']
+        relatedProducts: ['organic-skincare-set', 'designer-handbag'],
+        storeLink: '#'
     }
 };
 
@@ -200,6 +313,8 @@ function loadProduct(product) {
     
     // Load product content
     const productContent = document.getElementById('productContent');
+    const storeLink = product.storeLink || '#';
+    const storeLinkAttrs = storeLink === '#' ? '' : ' target="_blank" rel="noopener noreferrer"';
     productContent.innerHTML = `
         <div class="product-images">
             <div class="main-image-container">
@@ -249,7 +364,7 @@ function loadProduct(product) {
                         <i class="fas fa-shopping-cart"></i>
                         Add to Cart
                     </button>
-                    <a href="#" class="btn-secondary">
+                    <a href="${storeLink}" class="btn-secondary"${storeLinkAttrs}>
                         <i class="fas fa-external-link-alt"></i>
                         Visit Store
                     </a>

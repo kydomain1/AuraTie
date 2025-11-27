@@ -179,6 +179,27 @@
     color: var(--text-dark);
 }
 
+.stubhub-link,
+.viagogo-link {
+    background: #fff3d4;
+    color: var(--primary-color);
+    padding: 0 0.25rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.stubhub-link a,
+.viagogo-link a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.stubhub-link a:hover,
+.viagogo-link a:hover {
+    color: var(--secondary-color);
+}
+
 .article-image-container {
     margin: 2rem 0;
     text-align: center;

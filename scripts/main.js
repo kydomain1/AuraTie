@@ -1,6 +1,28 @@
 // Article data
 const articles = [
     {
+        id: 'viagogo-live-freedom',
+        title: 'Viagogo: The Freedom to Dance, Sing & Cheer Live',
+        category: 'travel',
+        excerpt: 'Tap Viagogo’s live marketplace to secure unforgettable seats across concerts, sports, and theater weekends before the energy peaks.',
+        image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=800&h=600&fit=crop&crop=center',
+        date: '2025-10-02',
+        readTime: '6 min read',
+        author: 'Marcus Bell',
+        tags: ['live events', 'tickets', 'travel', 'nightlife']
+    },
+    {
+        id: 'stubhub-trending-events',
+        title: 'Discover Trending Events Near You on StubHub',
+        category: 'travel',
+        excerpt: 'From arena concerts to hometown sports rivalries, here’s how to spot and book the season’s hottest tickets in minutes using StubHub’s discovery tools.',
+        image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop&crop=center',
+        date: '2025-10-03',
+        readTime: '7 min read',
+        author: 'Lena Morris',
+        tags: ['events', 'tickets', 'live entertainment', 'city guide']
+    },
+    {
         id: 'sustainable-fashion',
         title: 'The Ultimate Guide to Sustainable Fashion: Building a Conscious Wardrobe',
         category: 'fashion',
@@ -70,6 +92,26 @@ const articles = [
 
 // Products data
 const products = [
+    {
+        id: 'viagogo-live-pass',
+        title: 'Viagogo Live Freedom Pass',
+        category: 'travel',
+        price: '$159.00',
+        rating: 4.8,
+        image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&h=400&fit=crop',
+        description: 'Weekend-ready ticket bundles curated through Viagogo’s verified resale network, complete with hospitality tips.',
+        features: ['Multi-city event credits', 'VIP-ready seat mapping', 'Price-drop monitoring', 'Mobile ticket transfers']
+    },
+    {
+        id: 'stubhub-event-pass',
+        title: 'City Event Explorer by StubHub',
+        category: 'travel',
+        price: '$149.00',
+        rating: 4.9,
+        image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=400&h=400&fit=crop',
+        description: 'Curated access bundles for concerts, sports, and theater in your city, powered by StubHub’s verified ticket marketplace.',
+        features: ['Multi-event bundles', 'Mobile-first ticketing', 'Real-time seat maps', 'VIP upgrade suggestions']
+    },
     {
         id: 'organic-skincare-set',
         title: 'Premium Organic Skincare Set',

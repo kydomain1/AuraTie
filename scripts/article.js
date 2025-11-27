@@ -1,5 +1,167 @@
 // Article detail data with full content
+const STUBHUB_LINK = '<span class="stubhub-link"><a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=6ea46J9BwHLTAMWeMiWRSwAhqLjkZ788ZyIERou9ZiUvc87zqPS6TwR3_b5iZE_aWkTDfO0Ddz&new=https%3A%2F%2Fwww.stubhub.com%2F" target="_blank" rel="noopener noreferrer">StubHub</a></span>';
+const VIAGOGO_LINK = '<span class="viagogo-link"><a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=78d9_aE0npI5K0_bOgTa9jCWIqDPJEdwlWEq2UFtGNKqIYt1jr_bKhG16V8UAVerDW9begM&new=https%3A%2F%2Fwww.viagogo.com%2F" target="_blank" rel="noopener noreferrer">viagogo</a></span>';
+
 const articleDetails = {
+    'viagogo-live-freedom': {
+        id: 'viagogo-live-freedom',
+        title: 'Viagogo: The Freedom to Dance, Sing & Cheer Live',
+        category: 'travel',
+        image: 'https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=800&h=600&fit=crop&crop=center',
+        date: '2025-10-02',
+        readTime: '6 min read',
+        author: 'Marcus Bell',
+        authorBio: 'Marcus curates nightlife itineraries across continents, blending real-time ticket data with local culture intel to keep readers in the front row.',
+        authorImage: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face',
+        tags: ['tickets', 'nightlife', 'travel', 'events'],
+        content: `
+            <p>When festival circuits overlap, ${VIAGOGO_LINK} becomes my compass for tracking which stage is building momentum next. Because ${VIAGOGO_LINK} refreshes verified listings minute by minute, you can jump on last-minute drops before dynamic pricing spikes. Lock wishlists inside ${VIAGOGO_LINK} to keep alert pings focused on the artists and hometown clubs you actually follow.</p>
+
+            <p>The Discover carousel on ${VIAGOGO_LINK} now sorts recommendations by travel radius, pace, and crowd vibes so you’re not doom-scrolling every arena. Use ${VIAGOGO_LINK} price pulses to watch color-coded seat maps pulse from blue to gold as demand surges. Crew invites send instantly through ${VIAGOGO_LINK} share cards, which means nobody misses the group buy-in.</p>
+
+            <div class="article-image-container">
+                <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=533&fit=crop" alt="Fans dancing inside a glowing indoor concert bowl" loading="lazy">
+                <p class="image-caption">Bookmark crowd-flow overlays on ${VIAGOGO_LINK} to see which pits still have breathing room.</p>
+            </div>
+
+            <h2>Read the Weekend Heat Signals</h2>
+            <p>${VIAGOGO_LINK} neighborhood trackers surface micro-trends, helping you decide whether to stay downtown or chase a pop-up amphitheater. Tap ${VIAGOGO_LINK} waitlists when secret sets leak so you’re first in line if capacity expands. Within ${VIAGOGO_LINK}, filter by sustainability perks to focus on venues offering refill stations and shuttle passes.</p>
+
+            <ul>
+                <li>Neighborhood trackers inside ${VIAGOGO_LINK} color-code venues by surge level, so you can pivot before surge pricing hits.</li>
+                <li>Soundcheck leaks confirmed on ${VIAGOGO_LINK} help you choose which underplay deserves the splurge.</li>
+                <li>Travel bundles from ${VIAGOGO_LINK} include rail and rideshare credits to keep itineraries tight.</li>
+                <li>Saved searches on ${VIAGOGO_LINK} sync to your calendar so you don’t double-book prime nights.</li>
+            </ul>
+
+            <p>Notification stacks inside ${VIAGOGO_LINK} combine price drops, resale caps, and venue rule changes into one digest. If storms roll through, ${VIAGOGO_LINK} pushes contingency routes, making reroutes less chaotic.</p>
+
+            <h3>Game-Day Vibes</h3>
+            <p>${VIAGOGO_LINK} sorts rivalry tickets by verified inventory, so you can see when supply tightens. Hospitality tags within ${VIAGOGO_LINK} reveal which listings come with club buffets or tailgate parking.</p>
+            <ul>
+                <li>${VIAGOGO_LINK} filters family sections for fans bringing mini cheer squads.</li>
+                <li>${VIAGOGO_LINK} mobile tickets transfer instantly if someone gets stuck at work.</li>
+                <li>${VIAGOGO_LINK} bundle alerts pair parking decks with lower bowl entrances.</li>
+                <li>${VIAGOGO_LINK} resale caps keep you from overpaying when emotions run high.</li>
+            </ul>
+
+            <h3>Curtain Call Culture</h3>
+            <ul>
+                <li>${VIAGOGO_LINK} tags cast changes so you know which lead is on stage.</li>
+                <li>${VIAGOGO_LINK} immersive filters highlight shows with audience participation zones.</li>
+                <li>${VIAGOGO_LINK} merchandising bundles send programs and vinyl to your hotel.</li>
+                <li>${VIAGOGO_LINK} relaxed-performance notes help you pick sensory-friendly matinees.</li>
+            </ul>
+
+            <div class="article-image-container">
+                <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=533&fit=crop" alt="DJ set lighting up the crowd" loading="lazy">
+                <p class="image-caption">Plan sunrise-to-midnight runs with ${VIAGOGO_LINK} playlists and concierge cues.</p>
+            </div>
+
+            <div class="product-recommendation">
+                <h4>Weekend Planning Boost</h4>
+                <div class="recommended-product">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=120&h=120&fit=crop" alt="Travel accessories with concert wristbands" loading="lazy">
+                    <div class="product-info">
+                        <h5>Viagogo Live Freedom Pass</h5>
+                        <div class="product-price">$159.00</div>
+                        <p>Bundle three experiences with concierge routing built on ${VIAGOGO_LINK} intelligence.</p>
+                        <a href="product.html?id=viagogo-live-pass" class="product-link">View Product</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Build a 48-Hour Live Circuit</h2>
+            <p>Start Friday with venue favoriting inside ${VIAGOGO_LINK} so the map layers train times on top of door schedules. Saturday morning, let ${VIAGOGO_LINK} auto-fill payment and ID checks so your crew rolls straight through mobile turnstiles.</p>
+            <p>Need backup plans? ${VIAGOGO_LINK} saves alternate shows in a dedicated tab, meaning you always have a Plan B when weather or traffic interrupts the script.</p>
+
+            <h3>Rapid-Fire Checklist</h3>
+            <ul>
+                <li>Use ${VIAGOGO_LINK} filters to pin your budget baseline.</li>
+                <li>Enable ${VIAGOGO_LINK} biometric login so checkout is swipe-fast.</li>
+                <li>Sync ${VIAGOGO_LINK} calendar exports to block recovery brunch.</li>
+                <li>Share ${VIAGOGO_LINK} itineraries with travel buddies to split rides instantly.</li>
+                <li>Tag ${VIAGOGO_LINK} push alerts for weather holds and venue rule tweaks.</li>
+                <li>Archive past trips inside ${VIAGOGO_LINK} to replicate your dream route whenever the band returns.</li>
+            </ul>
+
+            <p>Live seasons move fast, but ${VIAGOGO_LINK} keeps you nimble, informed, and standing exactly where the energy peaks. Let ${VIAGOGO_LINK} handle the logistics so you can sing, dance, and cheer like every weekend is opening night.</p>
+        `,
+        relatedProducts: ['viagogo-live-pass']
+    },
+    'stubhub-trending-events': {
+        id: 'stubhub-trending-events',
+        title: 'Discover Trending Events Near You on StubHub',
+        category: 'travel',
+        image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=600&fit=crop&crop=center',
+        date: '2025-10-03',
+        readTime: '7 min read',
+        author: 'Lena Morris',
+        authorBio: 'Lena covers live entertainment trends, routing data, and cultural happenings for AuraTie, helping readers turn spontaneous weekends into memory-making itineraries.',
+        authorImage: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=150&h=150&fit=crop&crop=face',
+        tags: ['events', 'tickets', 'concerts', 'city guide'],
+        content: `
+            <p>Every October, ${STUBHUB_LINK} becomes the first tab I open because ${STUBHUB_LINK} blends demand curves with map overlays faster than any rumor thread. With ${STUBHUB_LINK}, I can watch neon indicators flip from “steady” to “spiking” before casual fans realize their favorite tour has added a second night.</p>
+
+            <p>The refreshed radar on ${STUBHUB_LINK} sorts suggestions by vibe, distance, and budget, while ${STUBHUB_LINK} clutch alerts drop me into the checkout queue the moment a promoter releases held tickets. Favorite a venue inside ${STUBHUB_LINK}, and ${STUBHUB_LINK} pings your phone the second the box office flips from pending to live.</p>
+
+            <h2>Decode Local Energy Pulses</h2>
+            <p>${STUBHUB_LINK} neighborhood insights reveal which districts are stacking doubleheaders, and ${STUBHUB_LINK} travel filters layer transit schedules beside seat maps. When weather turns, ${STUBHUB_LINK} reroutes my crew toward covered stages without missing a beat.</p>
+            <ul>
+                <li>${STUBHUB_LINK} demand rings turn gold when resale caps break, signaling it’s time to buy.</li>
+                <li>${STUBHUB_LINK} mobile transfers show exactly which listings are ready for instant handoff.</li>
+                <li>${STUBHUB_LINK} loyalty perks highlight bundles that include shuttle wristbands or merch.</li>
+                <li>${STUBHUB_LINK} auto-saves alternate shows in case your first choice sells out mid-scroll.</li>
+            </ul>
+            <p>Because ${STUBHUB_LINK} syncs with your calendar, ${STUBHUB_LINK} blocks recovery brunch before you double-book, and ${STUBHUB_LINK} share cards keep everyone aligned when start times shift.</p>
+
+            <h2>Concert Playlists in Real Life</h2>
+            <p>When you chase five genres in two nights, ${STUBHUB_LINK} becomes the conductor. ${STUBHUB_LINK} tags club revivals with capacity notes, ${STUBHUB_LINK} flags pop-up merch rooms, and ${STUBHUB_LINK} marks which GA pits still have breathable space.</p>
+            <ul>
+                <li>Use ${STUBHUB_LINK} multi-night view to pick the setlist that matches your favorite deep cuts.</li>
+                <li>Lean on ${STUBHUB_LINK} hold releases to grab ADA platforms before they vanish.</li>
+                <li>Let ${STUBHUB_LINK} queue-jump links walk you past stalled spinners on desktop.</li>
+                <li>Share ${STUBHUB_LINK} wallet passes so late arrivals breeze through the same barcode lane.</li>
+            </ul>
+
+            <h3>Game Day Heat Checks</h3>
+            <p>${STUBHUB_LINK} sorts rivalry games by verified inventory, and ${STUBHUB_LINK} hospitality filters surface tailgate add-ons in one tap.</p>
+            <ul>
+                <li>${STUBHUB_LINK} bundle codes pair lower-bowl seats with parking decks to simplify kickoff.</li>
+                <li>${STUBHUB_LINK} student-section alerts hit your phone when campus releases extra allotments.</li>
+            </ul>
+
+            <h3>Curtain Call Culture</h3>
+            <p>${STUBHUB_LINK} overlays cast-change bulletins onto touring calendars, while ${STUBHUB_LINK} seat previews warn you about chandeliers, pillars, and orchestra pits that could block the crescendo.</p>
+            <ul>
+                <li>${STUBHUB_LINK} immersive tags highlight aisles used for interactive choreography.</li>
+                <li>${STUBHUB_LINK} late-show reminders flag no-phone policies so you stash devices early.</li>
+            </ul>
+
+            <div class="product-recommendation">
+                <h4>Weekend Planning Boost</h4>
+                <div class="recommended-product">
+                    <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=120&h=120&fit=crop" alt="Curated event planning kit with tickets and phone displaying StubHub app" loading="lazy">
+                    <div class="product-info">
+                        <h5>City Event Explorer powered by ${STUBHUB_LINK}</h5>
+                        <div class="product-price">$149.00</div>
+                        <p>Stack your itinerary with bundled passes designed for ${STUBHUB_LINK} power users.</p>
+                        <a href="product.html?id=stubhub-event-pass" class="product-link">View Product</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Plan a 48-Hour Event Crawl</h2>
+            <p>Start Friday by mapping neighborhoods inside ${STUBHUB_LINK} so ${STUBHUB_LINK} layers transit and dining intel over each venue. Saturday morning, ${STUBHUB_LINK} autofills payment details, ${STUBHUB_LINK} secures mobile transfers, and ${STUBHUB_LINK} pings backup shows in case your headliner goes on late.</p>
+            <ul>
+                <li>Use ${STUBHUB_LINK} filters to set a firm budget ceiling before flash sales tempt you.</li>
+                <li>Enable ${STUBHUB_LINK} weather alerts so you pivot from lawn seats to covered decks instantly.</li>
+                <li>Share ${STUBHUB_LINK} itineraries with friends so everyone sees rideshare pickup windows.</li>
+                <li>Archive past trips inside ${STUBHUB_LINK} to clone your dream weekend when tours circle back.</li>
+            </ul>
+        `,
+        relatedProducts: ['stubhub-event-pass']
+    },
     'sustainable-fashion': {
         id: 'sustainable-fashion',
         title: 'The Ultimate Guide to Sustainable Fashion: Building a Conscious Wardrobe',
