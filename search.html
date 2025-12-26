@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="searchTitle">Search Results - AuraTie</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <h1><a href="index.html">AuraTie</a></h1>
+                    <span class="logo-subtitle">Premium Lifestyle</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="category.html?cat=fashion" class="dropdown-item">Fashion & Accessories</a>
+                            <a href="category.html?cat=health" class="dropdown-item">Health & Beauty</a>
+                            <a href="category.html?cat=home" class="dropdown-item">Home & Garden</a>
+                            <a href="category.html?cat=travel" class="dropdown-item">Travel & Accommodation</a>
+                            <a href="category.html?cat=finance" class="dropdown-item">Finance & Insurance</a>
+                            <a href="category.html?cat=food" class="dropdown-item">Food & Beverage</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+                        <button class="search-btn" onclick="performSearch()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Header -->
+    <section class="search-header">
+        <div class="container">
+            <div class="search-header-content">
+                <h1 class="search-title">Search Results</h1>
+                <div class="search-form-large">
+                    <input type="text" id="mainSearchInput" placeholder="Search articles, products, and more..." class="search-input-large">
+                    <button class="search-btn-large" onclick="performMainSearch()">
+                        <i class="fas fa-search"></i>
+                        Search
+                    </button>
+                </div>
+                <div class="search-query-display" id="searchQueryDisplay">
+                    <!-- Current search query will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Content -->
+    <main class="search-main">
+        <div class="container">
+            <div class="search-layout">
+                <div class="search-content">
+                    <!-- Search Filters -->
+                    <div class="search-filters">
+                        <div class="filter-section">
+                            <h3>Filter Results</h3>
+                            <div class="filter-group">
+                                <label>Content Type:</label>
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="contentType" value="articles" checked>
+                                        <span class="checkmark"></span>
+                                        Articles
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="contentType" value="products" checked>
+                                        <span class="checkmark"></span>
+                                        Products
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-group">
+                                <label>Category:</label>
+                                <div class="filter-options">
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="all" checked>
+                                        <span class="checkmark"></span>
+                                        All Categories
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="fashion">
+                                        <span class="checkmark"></span>
+                                        Fashion & Accessories
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="health">
+                                        <span class="checkmark"></span>
+                                        Health & Beauty
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="home">
+                                        <span class="checkmark"></span>
+                                        Home & Garden
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="travel">
+                                        <span class="checkmark"></span>
+                                        Travel & Accommodation
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="finance">
+                                        <span class="checkmark"></span>
+                                        Finance & Insurance
+                                    </label>
+                                    <label class="filter-option">
+                                        <input type="checkbox" name="category" value="food">
+                                        <span class="checkmark"></span>
+                                        Food & Beverage
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Sort By:</label>
+                                <select id="sortSelect" onchange="sortSearchResults()">
+                                    <option value="relevance">Most Relevant</option>
+                                    <option value="date-desc">Newest First</option>
+                                    <option value="date-asc">Oldest First</option>
+                                    <option value="title-asc">Title A-Z</option>
+                                    <option value="title-desc">Title Z-A</option>
+                                </select>
+                            </div>
+
+                            <button class="apply-filters-btn" onclick="applyFilters()">
+                                <i class="fas fa-filter"></i>
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Search Results -->
+                    <div class="search-results">
+                        <div class="results-header">
+                            <div class="results-info" id="resultsInfo">
+                                <!-- Results count and query info will be displayed here -->
+                            </div>
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid" onclick="toggleView('grid')">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list" onclick="toggleView('list')">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="search-results-container" id="searchResultsContainer">
+                            <!-- Search results will be loaded here -->
+                        </div>
+
+                        <div class="pagination" id="searchPagination">
+                            <!-- Pagination will be generated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="search-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Popular Searches</h3>
+                        <div class="popular-searches">
+                            <a href="search.html?q=sustainable+fashion" class="popular-search-tag">sustainable fashion</a>
+                            <a href="search.html?q=skincare+routine" class="popular-search-tag">skincare routine</a>
+                            <a href="search.html?q=minimalist+home" class="popular-search-tag">minimalist home</a>
+                            <a href="search.html?q=travel+guide" class="popular-search-tag">travel guide</a>
+                            <a href="search.html?q=investment+tips" class="popular-search-tag">investment tips</a>
+                            <a href="search.html?q=coffee+culture" class="popular-search-tag">coffee culture</a>
+                            <a href="search.html?q=organic+products" class="popular-search-tag">organic products</a>
+                            <a href="search.html?q=smart+home" class="popular-search-tag">smart home</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Recent Articles</h3>
+                        <div class="recent-articles" id="recentArticles">
+                            <!-- Recent articles will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Featured Products</h3>
+                        <div class="featured-products" id="sidebarFeaturedProducts">
+                            <!-- Featured products will be loaded here -->
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- No Results Section -->
+    <section class="no-results-section" id="noResultsSection" style="display: none;">
+        <div class="container">
+            <div class="no-results-content">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h2>No Results Found</h2>
+                <p>We couldn't find any content matching your search. Try different keywords or browse our categories.</p>
+                <div class="no-results-suggestions">
+                    <h4>Suggestions:</h4>
+                    <ul>
+                        <li>Check your spelling</li>
+                        <li>Try more general keywords</li>
+                        <li>Use fewer keywords</li>
+                        <li>Browse our <a href="index.html">popular content</a></li>
+                    </ul>
+                </div>
+                <div class="browse-categories">
+                    <h4>Browse Categories:</h4>
+                    <div class="category-links">
+                        <a href="category.html?cat=fashion" class="category-link">Fashion</a>
+                        <a href="category.html?cat=health" class="category-link">Health</a>
+                        <a href="category.html?cat=home" class="category-link">Home</a>
+                        <a href="category.html?cat=travel" class="category-link">Travel</a>
+                        <a href="category.html?cat=finance" class="category-link">Finance</a>
+                        <a href="category.html?cat=food" class="category-link">Food</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with AuraTie</h2>
+                <p>Get the latest lifestyle trends, product recommendations, and exclusive content delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>AuraTie</h3>
+                        <p>Premium lifestyle content for the modern reader</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@auratielife" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category.html?cat=fashion">Fashion & Accessories</a></li>
+                        <li><a href="category.html?cat=health">Health & Beauty</a></li>
+                        <li><a href="category.html?cat=home">Home & Garden</a></li>
+                        <li><a href="category.html?cat=travel">Travel & Accommodation</a></li>
+                        <li><a href="category.html?cat=finance">Finance & Insurance</a></li>
+                        <li><a href="category.html?cat=food">Food & Beverage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@auratielife.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 AuraTie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/search.js"></script>
+</body>
+</html>

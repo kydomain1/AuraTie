@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraTie - Premium Lifestyle Magazine</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="top-bar">
+                    <div class="top-bar-left">
+                        <div class="date-display" id="currentDate"></div>
+                        <div class="weather-info">
+                            <i class="fas fa-sun"></i>
+                            <span>New York, 72°F</span>
+                        </div>
+                    </div>
+                    <div class="top-bar-center">
+                        <div class="breaking-news">
+                            <span class="breaking-label">TRENDING</span>
+                            <div class="news-ticker">
+                                <span>Sustainable Fashion Week 2025 • Korean Beauty Trends • Smart Home Revolution</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-bar-right">
+                        <div class="social-icons">
+                            <a href="https://facebook.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://youtube.com/@auratielife" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="header-actions">
+                            <button class="newsletter-btn" onclick="openNewsletterModal()">
+                                <i class="fas fa-envelope"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <!-- Logo Section -->
+                    <div class="logo-section">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="logo-text">
+                                <h1>AuraTie</h1>
+                                <span class="logo-tagline">Premium Lifestyle Magazine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Search Section -->
+                    <div class="header-search">
+                        <div class="search-wrapper">
+                            <input type="text" id="searchInput" placeholder="Search articles, products & more..." class="search-input">
+                            <button class="search-btn" onclick="performSearch()">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search-suggestions" id="searchSuggestions">
+                            <!-- Search suggestions will appear here -->
+                        </div>
+                    </div>
+
+                    <!-- Header Right -->
+                    <div class="header-right">
+                        <div class="language-selector">
+                            <button class="lang-btn">
+                                <i class="fas fa-globe"></i>
+                                EN
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="header-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                        
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">
+                                <i class="fas fa-th-large"></i>
+                                Categories
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-content">
+                                    <div class="mega-menu-column">
+                                        <h4>Lifestyle</h4>
+                                        <a href="category.html?cat=fashion" class="mega-menu-item">
+                                            <i class="fas fa-tshirt"></i>
+                                            <div>
+                                                <span>Fashion & Accessories</span>
+                                                <small>Style guides & trends</small>
+                                            </div>
+                                        </a>
+                                        <a href="category.html?cat=health" class="mega-menu-item">
+                                            <i class="fas fa-heart"></i>
+                                            <div>
+                                                <span>Health & Beauty</span>
+                                                <small>Wellness & skincare</small>
+                                            </div>
+                                        </a>
+                                        <a href="category.html?cat=home" class="mega-menu-item">
+                                            <i class="fas fa-home"></i>
+                                            <div>
+                                                <span>Home & Garden</span>
+                                                <small>Interior & design</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-column">
+                                        <h4>Experience</h4>
+                                        <a href="category.html?cat=travel" class="mega-menu-item">
+                                            <i class="fas fa-plane"></i>
+                                            <div>
+                                                <span>Travel & Accommodation</span>
+                                                <small>Destinations & guides</small>
+                                            </div>
+                                        </a>
+                                        <a href="category.html?cat=food" class="mega-menu-item">
+                                            <i class="fas fa-utensils"></i>
+                                            <div>
+                                                <span>Food & Beverage</span>
+                                                <small>Culinary experiences</small>
+                                            </div>
+                                        </a>
+                                        <a href="category.html?cat=finance" class="mega-menu-item">
+                                            <i class="fas fa-chart-line"></i>
+                                            <div>
+                                                <span>Finance & Insurance</span>
+                                                <small>Financial planning</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="mega-menu-featured">
+                                        <h4>Featured Article</h4>
+                                        <div class="featured-preview">
+                                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&h=120&fit=crop" alt="Featured">
+                                            <div class="featured-content">
+                                                <h5>Sustainable Fashion Revolution</h5>
+                                                <p>The ultimate guide to eco-conscious style...</p>
+                                                <a href="article.html?id=sustainable-fashion" class="featured-link">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="search.html" class="nav-link">
+                            <i class="fas fa-search"></i>
+                            Discover
+                        </a>
+                        <a href="about.html" class="nav-link">
+                            <i class="fas fa-users"></i>
+                            About
+                        </a>
+                        <a href="contact.html" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact
+                        </a>
+                    </div>
+
+                    <div class="nav-extras">
+                        <div class="reading-progress">
+                            <div class="progress-bar" id="readingProgress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-main">
+                <article class="featured-article">
+                    <div class="article-image">
+                        <img src="image/头图.png" alt="Transparent Pricing" loading="lazy">
+                        <div class="article-category">Finance & Insurance</div>
+                    </div>
+                    <div class="article-content">
+                        <h2 class="article-title">Przejrzyste Ceny Bez Niespodziewanych Opłat</h2>
+                        <p class="article-excerpt">Odkryj, jak modele przejrzystych cen rewolucjonizują zaufanie konsumentów. Dowiedz się, dlaczego ceny z góry mają znaczenie i jak unikać ukrytych opłat w swoich decyzjach finansowych.</p>
+                        <div class="article-meta">
+                            <span class="date">5 października 2025</span>
+                            <span class="read-time">7 min czytania</span>
+                        </div>
+                        <a href="article.html?id=transparent-pricing" class="read-more-btn">Przeczytaj Pełny Artykuł</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="hero-sidebar">
+                <div class="trending-section">
+                    <h3>Trending Now</h3>
+                    <div class="trending-articles">
+                        <article class="trending-item" onclick="window.location.href='article.html?id=transparent-pricing'">
+                            <img src="image/头图.png" alt="Przejrzyste Ceny" loading="lazy">
+                            <div class="trending-content">
+                                <h4>Przejrzyste Ceny Bez Niespodziewanych Opłat</h4>
+                                <span class="trending-date">5 października 2025</span>
+                            </div>
+                        </article>
+                        <article class="trending-item" onclick="window.location.href='article.html?id=minimalist-home-design'">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=150&h=100&fit=crop" alt="Home decor" loading="lazy">
+                            <div class="trending-content">
+                                <h4>Minimalist Home Design Trends</h4>
+                                <span class="trending-date">June 12, 2025</span>
+                            </div>
+                        </article>
+                        <article class="trending-item" onclick="window.location.href='article.html?id=european-travel-guide'">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=150&h=100&fit=crop" alt="Travel destination" loading="lazy">
+                            <div class="trending-content">
+                                <h4>Hidden Gems: European Travel Guide</h4>
+                                <span class="trending-date">May 20, 2025</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-showcase">
+        <div class="container">
+            <h2 class="section-title">Explore Our Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="fashion">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&h=300&fit=crop" alt="Fashion & Accessories" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Fashion & Accessories</h3>
+                        <p>Latest trends, style guides, and premium fashion recommendations</p>
+                        <a href="category.html?cat=fashion" class="category-link">Explore Fashion</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="health">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&h=300&fit=crop" alt="Health & Beauty" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Health & Beauty</h3>
+                        <p>Wellness tips, beauty routines, and product reviews</p>
+                        <a href="category.html?cat=health" class="category-link">Explore Health</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="home">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop" alt="Home & Garden" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Home & Garden</h3>
+                        <p>Interior design, gardening tips, and home improvement guides</p>
+                        <a href="category.html?cat=home" class="category-link">Explore Home</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="travel">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop" alt="Travel & Accommodation" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Travel & Accommodation</h3>
+                        <p>Travel guides, accommodation reviews, and destination tips</p>
+                        <a href="category.html?cat=travel" class="category-link">Explore Travel</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="finance">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Finance & Insurance" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Finance & Insurance</h3>
+                        <p>Financial advice, investment tips, and insurance guides</p>
+                        <a href="category.html?cat=finance" class="category-link">Explore Finance</a>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="food">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="Food & Beverage" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>Food & Beverage</h3>
+                        <p>Culinary experiences, restaurant reviews, and beverage guides</p>
+                        <a href="category.html?cat=food" class="category-link">Explore Food</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="latest-articles">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with AuraTie</h2>
+                <p>Get the latest lifestyle trends, product recommendations, and exclusive content delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>AuraTie</h3>
+                        <p>Premium lifestyle content for the modern reader</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://facebook.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com/auratielife" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://youtube.com/@auratielife" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category.html?cat=fashion">Fashion & Accessories</a></li>
+                        <li><a href="category.html?cat=health">Health & Beauty</a></li>
+                        <li><a href="category.html?cat=home">Home & Garden</a></li>
+                        <li><a href="category.html?cat=travel">Travel & Accommodation</a></li>
+                        <li><a href="category.html?cat=finance">Finance & Insurance</a></li>
+                        <li><a href="category.html?cat=food">Food & Beverage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="advertise.html">Advertise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@auratielife.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 AuraTie. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script>
+        // 额外的调试和确保文章加载
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Index page DOMContentLoaded fired');
+            
+            // 延迟执行以确保main.js完全加载
+            setTimeout(function() {
+                console.log('Delayed execution started');
+                console.log('Articles available:', typeof articles !== 'undefined' ? articles.length : 'undefined');
+                console.log('articlesGrid element:', document.getElementById('articlesGrid'));
+                
+                // 如果文章没有加载，手动加载
+                const articlesGrid = document.getElementById('articlesGrid');
+                if (articlesGrid && articlesGrid.children.length === 0) {
+                    console.log('No articles found in grid, attempting manual load...');
+                    if (typeof loadArticles === 'function') {
+                        loadArticles();
+                    } else {
+                        console.error('loadArticles function not available');
+                    }
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
