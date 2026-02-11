@@ -99,6 +99,17 @@ const articles = [
         author: 'Rachel Martinez',
         tags: ['ceny', 'przejrzystość', 'finanse', 'prawa konsumentów']
     },
+    {
+        id: 'stop-overpaying-phone-bill',
+        title: 'Why I Finally Stopped Overpaying for My Phone Bill (And How You Can Too)',
+        category: 'finance',
+        excerpt: 'After years of watching my wireless bill creep higher and higher, I discovered a smarter approach to mobile service that cut my costs in half—without sacrificing coverage or customer support.',
+        image: 'image/1-1.png',
+        date: '2026-02-01',
+        readTime: '8 min read',
+        author: 'Jennifer Walsh',
+        tags: ['phone bill', 'savings', 'wireless', 'budget', 'Consumer Cellular']
+    },
 ];
 
 // Products data
