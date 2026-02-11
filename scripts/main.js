@@ -330,7 +330,7 @@ function createArticleCard(article) {
                 <span class="read-time">${article.readTime}</span>
             </div>
             <a href="article.html?id=${article.id}" class="read-more-btn" style="display: inline-block; background: #8b4513; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease;">
-                阅读全文
+                Read More
             </a>
         </div>
     `;
