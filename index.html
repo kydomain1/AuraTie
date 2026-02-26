@@ -204,55 +204,10 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (dynamically populated by main.js) -->
     <section class="hero">
-        <div class="hero-content">
-            <div class="hero-main">
-                <article class="featured-article">
-                    <div class="article-image">
-                        <img src="image/1-1.png" alt="Stop Overpaying Phone Bill" loading="lazy">
-                        <div class="article-category">Finance & Insurance</div>
-                    </div>
-                    <div class="article-content">
-                        <h2 class="article-title">Why I Finally Stopped Overpaying for My Phone Bill (And How You Can Too)</h2>
-                        <p class="article-excerpt">After years of watching my wireless bill creep higher and higher, I discovered a smarter approach to mobile service that cut my costs in half—without sacrificing coverage or customer support.</p>
-                        <div class="article-meta">
-                            <span class="date">February 1, 2026</span>
-                            <span class="read-time">8 min read</span>
-                        </div>
-                        <a href="article.html?id=stop-overpaying-phone-bill" class="read-more-btn">Read Full Article</a>
-                    </div>
-                </article>
-            </div>
-
-            <div class="hero-sidebar">
-                <div class="trending-section">
-                    <h3>Trending Now</h3>
-                    <div class="trending-articles">
-                        <article class="trending-item" onclick="window.location.href='article.html?id=stop-overpaying-phone-bill'">
-                            <img src="image/1-1.png" alt="Stop Overpaying Phone Bill" loading="lazy">
-                            <div class="trending-content">
-                                <h4>Why I Finally Stopped Overpaying for My Phone Bill</h4>
-                                <span class="trending-date">February 1, 2026</span>
-                            </div>
-                        </article>
-                        <article class="trending-item" onclick="window.location.href='article.html?id=transparent-pricing'">
-                            <img src="image/头图.png" alt="Transparent Pricing" loading="lazy">
-                            <div class="trending-content">
-                                <h4>Przejrzyste Ceny Bez Niespodziewanych Opłat</h4>
-                                <span class="trending-date">October 5, 2025</span>
-                            </div>
-                        </article>
-                        <article class="trending-item" onclick="window.location.href='article.html?id=minimalist-home-design'">
-                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=150&h=100&fit=crop" alt="Home decor" loading="lazy">
-                            <div class="trending-content">
-                                <h4>Minimalist Home Design Trends</h4>
-                                <span class="trending-date">June 12, 2025</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-content" id="heroContent">
+            <!-- Hero featured article and trending sidebar will be injected here -->
         </div>
     </section>
 
@@ -421,19 +376,25 @@
             setTimeout(function() {
                 console.log('Delayed execution started');
                 console.log('Articles available:', typeof articles !== 'undefined' ? articles.length : 'undefined');
-                console.log('articlesGrid element:', document.getElementById('articlesGrid'));
                 
+                // 如果hero没有加载，手动加载
+                const heroContent = document.getElementById('heroContent');
+                if (heroContent && heroContent.children.length === 0) {
+                    console.log('Hero empty, attempting manual load...');
+                    if (typeof loadHeroSection === 'function') {
+                        loadHeroSection();
+                    }
+                }
+
                 // 如果文章没有加载，手动加载
                 const articlesGrid = document.getElementById('articlesGrid');
                 if (articlesGrid && articlesGrid.children.length === 0) {
                     console.log('No articles found in grid, attempting manual load...');
                     if (typeof loadArticles === 'function') {
                         loadArticles();
-                    } else {
-                        console.error('loadArticles function not available');
                     }
                 }
-            }, 1000);
+            }, 500);
         });
     </script>
 </body>

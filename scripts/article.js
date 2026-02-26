@@ -1627,6 +1627,106 @@ const articleDetails = {
             <p>If you're curious about making a switch, <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=a85aIsMotHNHUAQ4kQgRqXWkbUe_bd7K4pwseK1f4t6NVCpHp0LNbElPoEiLCnQ85jkwCayUnxQFikDALqZA_c&new=https%3A%2F%2Fwww.consumercellular.com%2F" target="_blank" rel="noopener noreferrer">Consumer Cellular's website</a> breaks down their plans pretty clearly. No pressure, no gimmicks—just the information you need to decide if it's right for you.</p>
         `,
         relatedProducts: []
+    },
+    'spring-weekend-getaway-kuwait': {
+        id: 'spring-weekend-getaway-kuwait',
+        title: 'I Planned a Last-Minute Spring Getaway from Kuwait for Under $200—Here\'s How',
+        category: 'travel',
+        image: 'image/2-1.png',
+        date: '2026-02-20',
+        readTime: '7 min read',
+        author: 'Nadia Hasan',
+        authorBio: 'Nadia is a Kuwait-based travel writer who covers budget-friendly getaways, airline deals, and weekend trip planning across the Middle East and beyond.',
+        authorImage: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
+        tags: ['travel', 'budget travel', 'Kuwait', 'spring getaway', 'Jazeera Airways'],
+        content: `
+            <p>There's a moment every February when the weather in Kuwait starts to shift—still cool enough for a light jacket in the evening, warm enough to sit outside for coffee in the afternoon. It's that in-between season that always makes me restless. Not quite summer, not quite anything. Just... waiting.</p>
+
+            <p>This year, I decided to stop waiting. I had a long weekend coming up, no real plans, and a vague desire to be somewhere else. Not a big trip. Not a two-week European tour. Just a quick reset—somewhere new, somewhere affordable, somewhere I could reach without burning a vacation day on transit alone.</p>
+
+            <p>So I did what I always do when the itch hits: I opened a flight search and started poking around.</p>
+
+            <div class="article-image-container">
+                <img src="image/2-2.png" alt="View from airplane window during golden hour flight" loading="lazy">
+                <p class="image-caption">Sometimes the best trips start with nothing more than a free weekend and a search bar</p>
+            </div>
+
+            <h2>The Fare That Started Everything</h2>
+
+            <p>I wasn't expecting much. Flights from Kuwait can be pricey if you're looking at the usual suspects—London, Istanbul, Bangkok. But I stumbled onto something that changed my math entirely. One-way fares to Tbilisi, Georgia, starting from around KWD 15. To Cairo for KWD 24. Amman for KWD 16. These weren't error fares or buried promo codes. They were just... regular prices on <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=7b13IzB5e7yUTmdC13FvFNesl1Ik9zv0ixFIhFLT39CPJxjzCCNduOnL349uQigls2FrVvSFEZdRMS10Law_c&new=https%3A%2F%2Fwww.jazeeraairways.com%2Fen-kw" target="_blank" rel="noopener noreferrer">Jazeera Airways</a>.</p>
+
+            <p>I'd flown with them before—a quick hop to Dubai a couple of years ago—but I hadn't realized how much their route network had expanded. They now fly to over 60 destinations across the Middle East, South Asia, Africa, and Europe. And the pricing is genuinely competitive, especially if you're flexible on dates.</p>
+
+            <p>Tbilisi caught my eye. I'd heard friends rave about Georgia's food scene, the old town architecture, and the fact that your money stretches further there than almost anywhere in Europe. A round trip for under KWD 35? That left plenty of budget for everything else.</p>
+
+            <h2>Booking Without the Headache</h2>
+
+            <p>One thing I appreciated about the booking process on <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=7b13IzB5e7yUTmdC13FvFNesl1Ik9zv0ixFIhFLT39CPJxjzCCNduOnL349uQigls2FrVvSFEZdRMS10Law_c&new=https%3A%2F%2Fwww.jazeeraairways.com%2Fen-kw" target="_blank" rel="noopener noreferrer">Jazeera Airways</a> was the transparency. The base fare is what you see, and then you choose what extras you actually want. Need checked baggage? Add it. Want to pick your seat? Pay a small fee. Prefer to travel light with just a carry-on? Then don't pay for what you won't use.</p>
+
+            <p>It's the kind of à la carte model that works well for weekend trips. I didn't need a meal on a three-hour flight. I didn't need priority boarding. What I did want was a window seat and the ability to check in online the night before—both of which were straightforward.</p>
+
+            <div class="article-image-container">
+                <img src="image/2-3.png" alt="Charming old town street in Tbilisi Georgia" loading="lazy">
+                <p class="image-caption">Tbilisi's old town delivers the kind of wandering that doesn't require a guidebook</p>
+            </div>
+
+            <p>They also have partnerships with several Kuwaiti banks—NBK, KFH, Boubyan, and others—offering 10% off when you pay with certain cards. I happened to have one of the qualifying cards, which shaved another few dinars off the total. Small savings, but they add up when you're trying to keep a trip under $200.</p>
+
+            <h2>Three Days in Tbilisi on a Shoestring</h2>
+
+            <p>I landed on a Thursday evening. The flight from Kuwait was direct, just over three hours, and I was in a taxi heading to my guesthouse by 9 PM. Total accommodation cost for three nights: about $75. The guesthouse was in the Sololaki neighborhood—crumbling balconies, stray cats, and the kind of quiet that makes you forget you're in a capital city.</p>
+
+            <p>Friday morning, I walked. That's mostly what you do in Tbilisi. The sulfur baths in Abanotubani. The winding streets up to Narikala Fortress. The cable car over the river. None of it cost more than a few dollars, and most of it was free.</p>
+
+            <p>Lunch was khinkali at a place a local recommended—eight dumplings for the equivalent of $3. Dinner was at a wine bar in the Vera district where a bottle of excellent Georgian red cost less than a glass of mediocre wine back home. I spent the evening on a rooftop terrace watching the city lights come on, feeling like I'd gotten away with something.</p>
+
+            <div class="article-image-container">
+                <img src="image/2-4.png" alt="Traditional Georgian khinkali dumplings on a plate" loading="lazy">
+                <p class="image-caption">Georgian cuisine alone is worth the flight—and it won't break the bank either</p>
+            </div>
+
+            <h2>Why Short Trips Work Better Than You Think</h2>
+
+            <p>There's a common belief that travel has to be a big production. Two weeks minimum. Months of planning. A detailed itinerary. And sure, those trips have their place. But I've found that some of my most memorable getaways have been the spontaneous ones—the "I have 72 hours, let's go" kind.</p>
+
+            <p>Living in Kuwait, we're actually in a great position for this. The geography puts us within a few hours of dozens of interesting destinations. The problem was always cost and convenience. But with carriers like <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=7b13IzB5e7yUTmdC13FvFNesl1Ik9zv0ixFIhFLT39CPJxjzCCNduOnL349uQigls2FrVvSFEZdRMS10Law_c&new=https%3A%2F%2Fwww.jazeeraairways.com%2Fen-kw" target="_blank" rel="noopener noreferrer">Jazeera Airways</a> offering direct flights at genuinely low fares, the barrier to a weekend escape is lower than it's been in years.</p>
+
+            <p>I've already started eyeing my next trip. Budapest is on the route map now—flights from Kuwait with fares that make it hard to say no. So is Batumi for a summer beach weekend, and Prague if I'm feeling ambitious about a slightly longer getaway.</p>
+
+            <h2>A Few Tips If You're Thinking About It</h2>
+
+            <p>Based on my experience, here's what I'd suggest for anyone looking to pull off a similar last-minute trip:</p>
+
+            <ul>
+                <li>Be flexible on your destination. Don't start with "I want to go to Paris." Start with "What's cheap this weekend?" You might end up somewhere better.</li>
+                <li>Check the flexible dates option when searching. A one-day shift can sometimes cut your fare significantly.</li>
+                <li>Travel light. If you can fit everything in a carry-on, you save on baggage fees and skip the wait at the carousel.</li>
+                <li>Look into bank card promotions. That 10% off adds up, especially on round-trip bookings.</li>
+                <li>Book directly through the airline's site rather than third-party aggregators. You'll have an easier time if you need to make changes, and you often get access to promotions that aren't available elsewhere.</li>
+            </ul>
+
+            <div class="article-image-container">
+                <img src="image/2-5.png" alt="Traveler with backpack overlooking a scenic city view" loading="lazy">
+                <p class="image-caption">The best travel hack isn't a secret credit card trick—it's just being willing to go</p>
+            </div>
+
+            <h2>The Real Cost Breakdown</h2>
+
+            <p>For anyone who likes numbers, here's roughly what my Tbilisi weekend cost:</p>
+
+            <ul>
+                <li>Round-trip flight (Kuwait to Tbilisi via <a href="https://www.linkhaitao.com/index.php?mod=lhdeal&track=7b13IzB5e7yUTmdC13FvFNesl1Ik9zv0ixFIhFLT39CPJxjzCCNduOnL349uQigls2FrVvSFEZdRMS10Law_c&new=https%3A%2F%2Fwww.jazeeraairways.com%2Fen-kw" target="_blank" rel="noopener noreferrer">Jazeera Airways</a>): ~$100</li>
+                <li>Accommodation (3 nights, guesthouse): ~$75</li>
+                <li>Food and drinks (3 days): ~$45</li>
+                <li>Local transport and activities: ~$20</li>
+                <li>Total: ~$240</li>
+            </ul>
+
+            <p>Okay, so I went slightly over $200. But for a three-night international trip with good food, great wine, and a city I'd never seen before? I'd call that a win.</p>
+
+            <p>Spring is short. If you've been staring at the same walls and thinking about getting away, stop thinking and start searching. You might be surprised at what's out there—and how little it costs to just go.</p>
+        `,
+        relatedProducts: []
     }
 };
 

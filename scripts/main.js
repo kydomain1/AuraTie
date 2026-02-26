@@ -110,6 +110,17 @@ const articles = [
         author: 'Jennifer Walsh',
         tags: ['phone bill', 'savings', 'wireless', 'budget', 'Consumer Cellular']
     },
+    {
+        id: 'spring-weekend-getaway-kuwait',
+        title: 'I Planned a Last-Minute Spring Getaway from Kuwait for Under $200—Here\'s How',
+        category: 'travel',
+        excerpt: 'Spring hit and I needed out. A quick search turned up surprisingly cheap flights from Kuwait to places I\'d never considered—and the whole trip cost less than a fancy dinner for two.',
+        image: 'image/2-1.png',
+        date: '2026-02-20',
+        readTime: '7 min read',
+        author: 'Nadia Hasan',
+        tags: ['travel', 'budget travel', 'Kuwait', 'spring getaway', 'Jazeera Airways']
+    },
 ];
 
 // Products data
@@ -167,9 +178,13 @@ const products = [
 ];
 
 // Initialize the application
-document.addEventListener('DOMContentLoaded', function() {
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeApp();
+    });
+} else {
     initializeApp();
-});
+}
 
 function initializeApp() {
     setupMobileMenu();
@@ -177,6 +192,7 @@ function initializeApp() {
     setupNewsletter();
     setupHeaderFeatures();
     setupImageErrorHandling();
+    loadHeroSection();
     loadArticles();
     setupCategoryCards();
     setupScrollAnimations();
@@ -283,6 +299,54 @@ function setupNewsletter() {
             }, 1500);
         });
     }
+}
+
+// Build hero section dynamically based on latest articles
+function loadHeroSection() {
+    const heroContent = document.getElementById('heroContent');
+    if (!heroContent || !articles || articles.length === 0) return;
+
+    // Sort articles by date descending
+    const sorted = [...articles].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    const featured = sorted[0];
+    const trending = sorted.slice(1, 4);
+
+    heroContent.innerHTML = `
+        <div class="hero-main">
+            <article class="featured-article">
+                <div class="article-image">
+                    <img src="${featured.image}" alt="${featured.title}" loading="lazy">
+                    <div class="article-category">${getCategoryDisplayName(featured.category)}</div>
+                </div>
+                <div class="article-content">
+                    <h2 class="article-title">${featured.title}</h2>
+                    <p class="article-excerpt">${featured.excerpt}</p>
+                    <div class="article-meta">
+                        <span class="date">${formatDate(featured.date)}</span>
+                        <span class="read-time">${featured.readTime}</span>
+                    </div>
+                    <a href="article.html?id=${featured.id}" class="read-more-btn">Read Full Article</a>
+                </div>
+            </article>
+        </div>
+        <div class="hero-sidebar">
+            <div class="trending-section">
+                <h3>Trending Now</h3>
+                <div class="trending-articles">
+                    ${trending.map(a => `
+                        <article class="trending-item" onclick="window.location.href='article.html?id=${a.id}'">
+                            <img src="${a.image}" alt="${a.title}" loading="lazy">
+                            <div class="trending-content">
+                                <h4>${a.title}</h4>
+                                <span class="trending-date">${formatDate(a.date)}</span>
+                            </div>
+                        </article>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `;
 }
 
 // Load and display articles
